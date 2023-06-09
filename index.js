@@ -23,7 +23,7 @@ function getFeedHtml(){
                             ${data.replies.length}
                         </span>
                         <span class="tweet-detail">
-                            ${data.isLiked}
+                            ${data.likes} 
                         </span>
                         <span class="tweet-detail">
                             ${data.retweets}
