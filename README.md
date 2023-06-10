@@ -6,6 +6,11 @@
     > CDNs (Content Delivery Networks)
         - add icons 
         - generate UUIDs
+      ### What is CDN (Content DElivery Networks) ?
+            - A remote service
+            - Provides assets to web applications 
+            - E.g: functions, styles, icons...
+            - Gives us a snippet of code that will bring the asset into our application
     > textarea
     > data attributes 
     > conditionally render styles 
@@ -56,6 +61,22 @@
                         padding: 5px;
                         resize: none;
                     }
+
+    > CDN fontawesome: 
+        - First we have to link the "CDN fontawesome" link to html
+        - Then we can search and add icons from "fontawesome" homepage
+
+    > Data Attributes: (Storing extra information in HTML elements)
+
+        Syntax: data-* (where * represent the name we give the data attribute)
+
+            So,  data-unique-name = "your data"
+
+        Ex: 
+            <img class="img-large" data-size="2650*2650">
+        
+        Ex.2: 
+            <i class="fa-solid fa-share" data-share="image-1"></i>
 
 # CSS:
 
