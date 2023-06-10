@@ -40,8 +40,32 @@
         Ex.3: 
              
              characters.forEach(function(character, index){
-    console.log(index, character.title)
-})
+                console.log(index, character.title)
+            })
+
+    > Data Attributes: 
+
+        - If we put a event inside a function as "parameter" we get an object, where we can go to "target" > "dataset" > "unique name we have given"
+
+        Ex: 
+            document.addEventListener('click', function(e) {
+                if (e.target.dataset.share)
+                console.log(e.target.dataset.share)
+            })
+
+        - Here "share" is the unique name as we have given in the Ex.2 of HTML
+
+    > Copying Object & Arrays: (Not the behaviour we expect!, If we change the value of a object outside the array, it will also  change inside the array)
+
+        *> But if we really want to make a real copy of an object or an arry : We use a method called :- (Making a deep copy.)
+
+    
+    > We can just flip a boolean by using "!" (logical NOT operator):
+
+        Ex:  targetTweetObj.isLiked = !targetTweetObj.isLiked
+
+        - If it's liked it will become not liked or vice versa
+
 # HTML:
 
     > textarea : (A multiline input field)
@@ -77,6 +101,10 @@
         
         Ex.2: 
             <i class="fa-solid fa-share" data-share="image-1"></i>
+
+        **> If we use "uniqueName" in html as camelCase we have to write whole name in small letters in JS.
+            - We should not use uppercase letter when naming data attributes in HTML! (If we do we have to write the name in lower case in JS but it's not the best practice)
+        **> We should always use dashes in HTML to separate the words in of data attributes naming, AND we should use "camelCase" in JS to write those name
 
 # CSS:
 
