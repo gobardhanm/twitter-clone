@@ -66,6 +66,28 @@
 
         - If it's liked it will become not liked or vice versa
 
+    > Conditionally render CSS class: 
+
+        - We can conditionally render CSS class using flip boolean method and add the class in that element
+
+    > UUID: (we can import uuid by importing the cdn link to the js file and using that where ever needed)
+
+        Ex: 
+            import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
+
+            - We can import like this ( and we can change the name "uuidv4" acc to our convinience)
+
+            cars.push({
+                brand: 'Tesla',
+                model: 'Model S',
+                price: '🤦‍♂️',
+                uuid: uuidv4()   // calling //
+            })
+
+            - We can call the "uuidv4" like this.
+
+    > .unshift() : It pushes the object in the beginning of the array, (".push()" add an object on the end an array)
+
 # HTML:
 
     > textarea : (A multiline input field)
